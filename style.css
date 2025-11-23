@@ -4,7 +4,7 @@ body {
     background: linear-gradient(red, blue);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url(images/Focus_Cherry.png);
+    background-image: url(images/Jair-Bolsonaro.jpg);
     background-repeat: no-repeat;
     background-repeat: fixed;
     background-position: center;
@@ -23,14 +23,6 @@ body {
 }
 
 h1 {
-
-
-
-
-
-
-
-
     /* How to apply border in css */
     border-style: solid;
     border-width: 5px;
@@ -51,17 +43,18 @@ h1 {
 }
 
 h2 {
-
+    -webkit-text-stroke: 1px white;
     border-left-style: solid;
     border-right-style: outset;
     border-left-width: 5px;
     border-right-width: 5px;
-    color: black;
+    color: blueviolet;
     font-family: sans-serif;
     font-size: 40px;
     font-weight: 100;
-    font-style: oblique;
+    font-style: bold;
     text-decoration: darkblue wavy underline;
+    transform: translateX(50px);
 
     /* text-decoration |  Is to apply some decoration in the text.Example: underline, solid etc. 
     I can choose the color of the decoration putting the name of color.
@@ -71,13 +64,100 @@ h2 {
     /* font-weight: | Is to apply the weight of the font */
     /* font-family: | Is to apply a font of your choice */
     /* font-size:   | Is to apply a size of font of your choice */
+
+    /* Transformation in css -> is to positioned something in some place in the site */
 }
+
+/* How to apply pseudoclass in css! */
+/* pseudoclass =a keyword added to a selector  that specifies a special state of the selected element */
+
+a:link {
+    color: yellowgreens;
+    /* The color of the link */
+}
+
+a:visited {
+    color: grey
+        /* The color if you not visited the site */
+}
+
+a:hover {
+    color: yellow
+        /* pass the cursor in the link */
+}
+
+a:active {
+    color: red
+        /* When you hold the cursor in the link */
+}
+
+
+/* How to apply shadows in the css! */
+
+a {
+    text-shadow: 1px 1px 1px red;
+    /* Apply shadows in the text 1px -> is equal a the shadow move the right,  2px -> the distanced the shadow of text,  3px-> the shadow will dispersament more the shadow with the text */
+    box-shadow: 1px 1px 1px red;
+    /* Apply shadows in the box of text */
+}
+
+
+/* How to apply icons in your site using css */
+
+a.fa-train {
+    color: yellow;
+    font-weight: 400px;
+
+}
+
+/* How to apply transformations in css */
+a {
+    transform: matrix(4, 3, 5, 5, 3, 2);
+}
+
+/* transform: matrix is use this values:
+transform: scaleX()
+transform: skewY()
+transform: skewX()
+transform: scaleY()
+transform: translateX()
+transform: translateY()
+*/
+
+/* How to use animations in css! */
+
+a {
+    animation: meuslide;
+    animation-delay: 5s;
+    animation-iteration-count: 4;
+    animation-timing-function: linear;
+    animation-duration: 10s
+}
+
+@keyframes meuslide {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-right: 100%
+    }
+}
+
+/* animation: name  | The name of animation in keyframes
+/* animation-duration: 50s  | The duration of the animation
+/* @keyframes name_animation{}  | is the start of product animation
+/* from{} to{}  | from -> where start the animation,  to -> where finish the animation */
+/* animation-interation-count: 4; | How many times the animation starts and finished */
+/* animation-delay: 3.2s;  | How many times it starts the animation
+/* animation-timing-fuction: | Its to time to pass the animation in the container */
+
 
 
 #Minecraft {
     /* How to add margin in css! */
     /* margin = space AROUND an element */
-    background-color: yellow;
+
     margin-top: 100px;
     margin-left: 30px;
     margin-right: 30px;
@@ -86,8 +166,13 @@ h2 {
     margin-top: 40%;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 50%;
+    margin-bottom: 10%;
 
+    position: relative;
+    top: 1000px;
+    left: 50px;
+
+    /* postion: relative | Is move the element in some position in the left right bottom etc
 
     /* margin-top: 30px  | Is to apply how many weight of the top is distanced in the start of the site
     margin-left: 30px  | Is to apply how many weight of the left is distanced in the start of the site
@@ -102,38 +187,41 @@ h2 {
 
 }
 
-#Bolsonaro {
+#Rotine {
     /* How to add float in css! */
     /* Float = positions an element to the left or right in the site */
 
-    margin-top: 10px;
-    background-color: aqua;
-
+    padding: 400px;
+    border: 5px;
     float: right;
+    clear: left;
+
+
 }
+
+/* float: left  | The float will positioned the image in someone place */
+/* clear: right  | This will make the text of the side i choose is white.
 
 
 
 /* This alteration aplicated in all sites when you write: <link rel='' and after href=''>
 /* And cost less time to write your sites.*/
 
-    /*How to specify a text to paint your text*/
-    #p2 {
-        color: green
-    }
+/*How to specify a text to paint your text*/
+#p2 {
+    color: green
+}
 
 
 
-    /* How to indicate a text through the classes */
-    .odd {
-        background-color: yellowgreen;
-        color: violet
-    }
+/* How to indicate a text through the classes */
+.odd {
+    background-color: yellowgreen;
+    color: violet
+}
 
-    .even {
-        background-color: turquoise;
-        color: tomato;
-    }
+.even {
+    background-color: turquoise;
+    color: tomato;
+}
 
-
-    /* How to add fonts in your CSS! */
